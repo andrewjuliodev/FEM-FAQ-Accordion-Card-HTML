@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap");
+
+/* RESET  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*WIREFRAMES}
+.frame {
+  border: 1px red solid;
+}*/
+
+/*STYLE*/
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+main {
+  width: 1440px;
+  height: 768px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+/*CARD*/
+.content {
+  width: 920px;
+  height: 510px;
+  display: grid;
+  grid-template-columns: 400px 520px;
+  grid-template-rows: 510px;
+  grid-template-areas: "left right";
+  background: white;
+  border-radius: 20px;
+  margin-top: 130px;
+  box-shadow: 5px 30px 60px -15px hsl(237, 12%, 33%);
+}
+
+.left {
+  width: 400px;
+  height: 510px;
+  grid-area: left;
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -565px -300px;
+}
+
+.illustration {
+  position: relative;
+  top: 70px;
+  left: -70px;
+}
+
+.box {
+  position: relative;
+  top: -155px;
+  left: -90px;
+}
+
+.right {
+  width: 520px;
+  height: 510px;
+  grid-area: right;
+}
+
+.faq {
+  width: 350px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 75px;
+  margin-top: 70px;
+}
+
+.accordion {
+  font-size: 14px;
+  width: 350px;
+  margin-left: 75px;
+  margin-top: -10px;
+}
+
+.container {
+  width: 350px;
+  /*height: 100px;*/
+  height: 55px;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.questionRow {
+  display: grid;
+  grid-template-columns: 300px 50px;
+  grid-template-rows: 50px;
+  color: hsl(237, 12%, 33%);
+  padding-top: 4px;
+  margin-bottom: -15px;
+}
+
+.question:hover {
+  font-weight: 700;
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.arrow {
+  width: 20%;
+  height: 20%;
+  margin: 18px 0 0 18px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  font-size: 12px;
+  color: hsl(240, 6%, 50%);
+}
