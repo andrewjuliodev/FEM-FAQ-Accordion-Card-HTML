@@ -74,10 +74,10 @@ main {
   width: 350px;
   font-size: 32px;
   font-weight: 700;
-  margin-left: 75px;
-  margin-top: 70px;
+  margin: 70px 0 50px 75px;
 }
 
+/*ACCORDION*/
 .accordion {
   font-size: 14px;
   width: 350px;
@@ -85,20 +85,24 @@ main {
   margin-top: -10px;
 }
 
-.container {
+details {
   width: 350px;
-  /*height: 100px;*/
-  height: 55px;
+  height: 40px;
   border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
-.questionRow {
-  display: grid;
-  grid-template-columns: 300px 50px;
-  grid-template-rows: 50px;
-  color: hsl(237, 12%, 33%);
-  padding-top: 4px;
-  margin-bottom: -15px;
+details[open] {
+  height: 70px;
+}
+
+summary {
+  display: flex;
+  flex-direction: row;
+}
+
+summary::-webkit-details-marker,
+summary::marker {
+  content: "";
 }
 
 .question:hover {
@@ -108,9 +112,9 @@ main {
 }
 
 .arrow {
-  width: 20%;
-  height: 20%;
-  margin: 18px 0 0 18px;
+  width: 4%;
+  height: 4%;
+  display: flex;
 }
 
 .arrow:hover {
@@ -118,7 +122,7 @@ main {
 }
 
 .answer {
-  display: none;
   font-size: 12px;
   color: hsl(240, 6%, 50%);
+  margin-top: 5px;
 }

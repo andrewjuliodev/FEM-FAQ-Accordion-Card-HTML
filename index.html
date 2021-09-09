@@ -15,18 +15,71 @@
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
-    
     <main>
       <div class="content frame">
         <div class="left frame">
-          
-          <img class="illustration frame" src='images/illustration-woman-online-desktop.svg'/>
-          <img class="box frame" src='images/illustration-box-desktop.svg'/>
+          <img
+            class="illustration frame"
+            src="images/illustration-woman-online-desktop.svg"
+          />
+          <img class="box frame" src="images/illustration-box-desktop.svg" />
         </div>
+        <!--ACCORDION-->
+
         <div class="right frame">
           <p class="faq frame">FAQ</p>
           <div class="accordion frame">
-            <div class='container cont1 frame'>
+
+            <details>
+              <summary class="question q1 frame">
+                  How many team members can I invite?
+                  <img class="arrow arrow1 frame" src='images/icon-arrow-down.svg'/>
+              </summary>
+              <p class="answer a1 frame">
+                You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+              </p>
+            </details>
+    
+            <details>
+              <summary class="question q2 frame">
+                  What is the maximum file upload size?
+              </summary>
+              <p class="answer a2 frame">
+                No more than 2GB. All files in your account must fit your</br> allotted
+                storage space.
+              </p>
+            </details>
+    
+            <details>
+              <summary class="question q3 frame">
+                How do I reset my password?
+              </summary>
+              <p class="answer a3 frame">
+                Click “Forgot password” from the login page or “Change</br> password” from your profile page. A reset link will be </br>emailed to you.
+              </p> 
+            </details>
+    
+            <details>
+              <summary class="question q4 frame">
+                Can I cancel my subscription?
+              </summary>
+              <p class="answer a4 frame">
+                Yes! Send us a message and we’ll process your request no</br> questions
+                asked.
+              </p>
+            </details>
+    
+            <details>
+              <summary class="question q5 frame">
+                Do you provide additional support?
+              </summary>
+              <p class="answer a5 frame">
+                Chat and email support is available 24/7. Phone lines are</br> open
+                during normal business hours.
+              </p>
+            </details>
+
+            <!-- <div class='container cont1 frame'>
               <div class="questionRow row1 frame">
                 <p class="question q1 frame">
                   How many team members can I invite?
@@ -83,12 +136,11 @@
                 Chat and email support is available 24/7. Phone lines are</br> open
                 during normal business hours.
               </p>
-            </div>
-
+            </div> -->
           </div>
         </div>
       </div>
     </main>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
   </body>
 </html>
