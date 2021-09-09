@@ -95,9 +95,19 @@ details[open] {
   height: 70px;
 }
 
+details[open] summary {
+  font-weight: 700;
+}
+
 summary {
   display: flex;
   flex-direction: row;
+}
+
+summary img {
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: 18px;
 }
 
 summary::-webkit-details-marker,
@@ -114,7 +124,6 @@ summary::marker {
 .arrow {
   width: 4%;
   height: 4%;
-  display: flex;
 }
 
 .arrow:hover {
